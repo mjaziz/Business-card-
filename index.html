@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        p {
+            margin: 10px 0;
+        }
+        .business-name {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        @media screen and (max-width: 768px) {
+            .container {
+                margin: 20px auto;
+                padding: 10px;
+            }
+            .business-name {
+                font-size: 20px;
+            }
+        }
+        @media screen and (max-width: 480px) {
+            .container {
+                margin: 10px auto;
+                padding: 5px;
+            }
+            .business-name {
+                font-size: 18px;
+            }
+        }
+        img.logo {
+            max-width: 200px;
+            height: auto;
+            display: block;
+            margin: 0 auto 20px;
+        }
+        img.headshot {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            animation: fadeIn 1s ease;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="jtlogo.png" alt="Jewelers Truly Logo" class="logo">
+        <h1>Contact Information</h1>
+        <p class="business-name">Jewelers Truly</p>
+        <img src="moshe_headshot.jpg" alt="Moshe Aziz" class="headshot">
+        <p>Name: Moshe Aziz</p>
+        <p>Address: 58 47th Street, Booth 30, New York, NY</p>
+        <p>Call or WhatsApp: <a href="tel:6464641935">646-464-1935</a></p>
+        <p>Email: <a href="mailto:namedesigngalaxy@gmail.com">namedesigngalaxy@gmail.com</a></p>
+    </div>
+</body>
+</html>
