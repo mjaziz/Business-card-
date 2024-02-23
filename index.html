@@ -19,18 +19,29 @@
             background-color: #b89c00; /* Gold container background */
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center; /* Center text */
+            animation: fadeIn 1s ease; /* Fade-in animation */
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
         }
         p {
             margin: 10px 0;
+            font-size: 18px; /* Font size increased for all paragraphs */
         }
         .business-name {
-            font-size: 24px;
+            font-size: 28px; /* Increased font size */
             font-weight: bold;
             color: #000; /* Black text */
             margin-bottom: 20px;
         }
         .position {
-            font-size: 18px;
+            font-size: 22px; /* Increased font size */
             color: #000; /* Black text */
             margin-bottom: 20px;
         }
@@ -40,10 +51,13 @@
                 padding: 10px;
             }
             .business-name {
-                font-size: 20px;
+                font-size: 24px; /* Adjusted font size */
             }
             .position {
-                font-size: 16px;
+                font-size: 20px; /* Adjusted font size */
+            }
+            p {
+                font-size: 16px; /* Adjusted font size */
             }
         }
         @media screen and (max-width: 480px) {
@@ -52,10 +66,13 @@
                 padding: 5px;
             }
             .business-name {
-                font-size: 18px;
+                font-size: 22px; /* Adjusted font size */
             }
             .position {
-                font-size: 14px;
+                font-size: 18px; /* Adjusted font size */
+            }
+            p {
+                font-size: 14px; /* Adjusted font size */
             }
         }
         img.logo {
@@ -69,15 +86,6 @@
             height: auto;
             border-radius: 50%;
             margin-bottom: 20px;
-            animation: fadeIn 1s ease;
-        }
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
         }
     </style>
 </head>
@@ -85,13 +93,12 @@
     <div class="container">
         <img src="jtlogogold.svg" alt="Jewelers Truly Logo" class="logo">
         <p class="business-name">Jewelers Truly</p>
-        <p class="position">Position: Buyer</p>
-        <img src="Moshe_headshot.png" alt="Moshe Aziz" class="headshot">
-        <p>Name: Moshe Aziz</p>
+        <img src="Moshe headshot.png" alt="Moshe Aziz" class="headshot">
+        <p> Moshe Aziz</p>
+        <p class="position"> Buyer</p>
         <p>Address: 58 47th Street, Booth 30, New York, NY</p>
         <p>Call or WhatsApp: <a href="tel:6464641935">646-464-1935</a></p>
         <p>Email: <a href="mailto:namedesigngalaxy@gmail.com">namedesigngalaxy@gmail.com</a></p>
     </div>
 </body>
 </html>
-
