@@ -16,7 +16,7 @@
             max-width: 600px;
             margin: 50px auto;
             padding: 20px;
-            background-color: #b89c00; /* Gold container background */
+            background-color: #fffbe6; /* Gold container background */
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: center; /* Center text */
@@ -32,57 +32,45 @@
         }
         p {
             margin: 10px 0;
-            font-size: 18px; /* Font size increased for all paragraphs */
+            font-size: 24px; /* Increased font size for all paragraphs */
         }
         .business-name {
-            font-size: 28px; /* Increased font size */
+            font-size: 36px; /* Increased font size for business name */
             font-weight: bold;
             color: #000; /* Black text */
             margin-bottom: 20px;
         }
         .position {
-            font-size: 22px; /* Increased font size */
+            font-size: 18px; /* Increased font size for position */
             color: #000; /* Black text */
-            margin-bottom: 20px;
+            margin-bottom: 8px;
         }
         @media screen and (max-width: 768px) {
             .container {
                 margin: 20px auto;
                 padding: 10px;
             }
-            .business-name {
-                font-size: 24px; /* Adjusted font size */
-            }
-            .position {
-                font-size: 20px; /* Adjusted font size */
-            }
             p {
-                font-size: 16px; /* Adjusted font size */
+                font-size: 20px; /* Adjusted font size for smaller screens */
             }
-        }
-        @media screen and (max-width: 480px) {
-            .container {
-                margin: 10px auto;
-                padding: 5px;
+            .name {
+                font-size: 26px; /* Adjusted font size for smaller screens */
             }
             .business-name {
-                font-size: 22px; /* Adjusted font size */
+                font-size: 36px; /* Adjusted font size for smaller screens */
             }
             .position {
-                font-size: 18px; /* Adjusted font size */
-            }
-            p {
-                font-size: 14px; /* Adjusted font size */
+                font-size: 18px; /* Adjusted font size for smaller screens */
             }
         }
         img.logo {
-            max-width: 200px;
+            max-width: 150px; /* Reduced logo size */
             height: auto;
             display: block;
             margin: 0 auto 20px;
         }
         img.headshot {
-            max-width: 100%;
+            max-width: 250px; /* Reduced headshot size */
             height: auto;
             border-radius: 50%;
             margin-bottom: 20px;
@@ -94,7 +82,7 @@
         <img src="jtlogogold.svg" alt="Jewelers Truly Logo" class="logo">
         <p class="business-name">Jewelers Truly</p>
         <img src="Moshe headshot.png" alt="Moshe Aziz" class="headshot">
-        <p> Moshe Aziz</p>
+        <p class="name"> Moshe Aziz</p>
         <p class="position"> Buyer</p>
         <p>Address: 58 47th Street, Booth 30, New York, NY</p>
         <p>Call or WhatsApp: <a href="tel:6464641935">646-464-1935</a></p>
@@ -102,3 +90,4 @@
     </div>
 </body>
 </html>
+
