@@ -33,17 +33,50 @@
         p {
             margin: 10px 0;
             font-size: 24px; /* Increased font size for all paragraphs */
+            animation: fadeInUp 1s ease forwards; /* Slide up animation */
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
         .business-name {
             font-size: 36px; /* Increased font size for business name */
             font-weight: bold;
             color: #000; /* Black text */
             margin-bottom: 20px;
+            animation: fadeInLeft 1s ease forwards; /* Slide in from left animation */
+        }
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
         }
         .position {
             font-size: 18px; /* Increased font size for position */
             color: #000; /* Black text */
             margin-bottom: 8px;
+            animation: fadeInRight 1s ease forwards; /* Slide in from right animation */
+        }
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
         }
         @media screen and (max-width: 768px) {
             .container {
@@ -68,12 +101,30 @@
             height: auto;
             display: block;
             margin: 0 auto 10px;
+            animation: bounce 0.5s ease; /* Bounce animation */
+        }
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
         }
         img.headshot {
             max-width: 100px; /* Reduced headshot size */
             height: auto;
             border-radius: 50%;
             margin-bottom: 10px;
+            animation: rotate 2s linear forwards; /* Rotate animation */
+        }
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
         }
     </style>
 </head>
@@ -82,10 +133,10 @@
         <img src="jtlogogold.svg" alt="Jewelers Truly Logo" class="logo">
         <p class="business-name">Jewelers Truly</p>
         <img src="Moshe headshot.png" alt="Moshe Aziz" class="headshot">
-        <p class="name"> Moshe Aziz</p>
-        <p class="position"> Buyer</p>
-        <p></p> Address: 58 W 47th Street</p>
-        <p></p> Booth 30, New York, NY</p>
+        <p class="name">Moshe Aziz</p>
+        <p class="position">Buyer</p>
+        <p>Address: 58 W 47th Street</p>
+        <p>Booth 30, New York, NY</p>
         <p>Call or WhatsApp: <a href="tel:6464641935">646-464-1935</a></p>
         <p>Email: <a href="mailto:namedesigngalaxy@gmail.com">namedesigngalaxy@gmail.com</a></p>
     </div>
