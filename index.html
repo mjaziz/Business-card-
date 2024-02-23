@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Information</title>
+    <title>Moshe Aziz - Buyer</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
+            background-color: #fff; /* White background */
+            color: #000; /* Black text */
         }
         .container {
             max-width: 600px;
             margin: 50px auto;
             padding: 20px;
-            background-color: #fff;
+            background-color: #ffd700; /* Gold container background */
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
@@ -25,7 +26,12 @@
         .business-name {
             font-size: 24px;
             font-weight: bold;
-            color: #333;
+            color: #000; /* Black text */
+            margin-bottom: 20px;
+        }
+        .position {
+            font-size: 18px;
+            color: #000; /* Black text */
             margin-bottom: 20px;
         }
         @media screen and (max-width: 768px) {
@@ -36,6 +42,9 @@
             .business-name {
                 font-size: 20px;
             }
+            .position {
+                font-size: 16px;
+            }
         }
         @media screen and (max-width: 480px) {
             .container {
@@ -44,6 +53,9 @@
             }
             .business-name {
                 font-size: 18px;
+            }
+            .position {
+                font-size: 14px;
             }
         }
         img.logo {
@@ -73,6 +85,7 @@
     <div class="container">
         <img src="jtlogo.png" alt="Jewelers Truly Logo" class="logo">
         <p class="business-name">Jewelers Truly</p>
+        <p class="position">Position: Buyer</p>
         <img src="moshe_headshot.jpg" alt="Moshe Aziz" class="headshot">
         <p>Name: Moshe Aziz</p>
         <p>Address: 58 47th Street, Booth 30, New York, NY</p>
@@ -81,3 +94,4 @@
     </div>
 </body>
 </html>
+
