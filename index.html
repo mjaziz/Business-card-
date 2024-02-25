@@ -163,21 +163,23 @@
         <embed src="25 Bava Metzia 1.pdf" type="application/pdf" width="100%" height="800px" />
      <script>
         // JavaScript to show/hide content based on device type
-        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-            // If mobile device, show button to view name plates
-            var mobileCatalogLink = document.createElement('a');
-            mobileCatalogLink.href = 'galaxy_nameplate_catalog.pdf';
+        var isIPhoneSafari = /iPhone/i.test(navigator.userAgent) && /Safari/i.test(navigator.userAgent);
+        if (isIPhoneSafari) {
+            // If iPhone Safari, show button to view name plates
+            var iPhoneSafariCatalogLink = document.createElement('a');
+            iPhoneSafariCatalogLink.href = 'galaxy_nameplate_catalog.pdf';
             var button = document.createElement('button');
             button.textContent = 'Tap here to view name plates';
-            mobileCatalogLink.appendChild(button);
-            document.getElementById('mobile-catalog-link').appendChild(mobileCatalogLink);
+            iPhoneSafariCatalogLink.appendChild(button);
+            document.getElementById('iphone-safari-catalog-link').appendChild(iPhoneSafariCatalogLink);
         } else {
-            // If desktop, show "Click here to view name plates" link
-            var desktopCatalogLink = document.createElement('a');
-            desktopCatalogLink.href = 'galaxy_nameplate_catalog.pdf';
-            desktopCatalogLink.textContent = 'Click here to view name plates';
-            document.getElementById('desktop-catalog-link').appendChild(desktopCatalogLink);
+            // For other devices, show a regular link to the catalog
+            var otherDevicesCatalogLink = document.createElement('a');
+            otherDevicesCatalogLink.href = 'galaxy_nameplate_catalog.pdf';
+            otherDevicesCatalogLink.textContent = 'View name plates';
+            document.getElementById('other-devices-catalog-link').appendChild(otherDevicesCatalogLink);
         }
-    </script></body>
+    </script> 
+</body>
 </html>
 
