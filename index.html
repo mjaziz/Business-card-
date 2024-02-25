@@ -161,8 +161,23 @@
     </div>
     <div style="margin: 50px auto; max-width: 100%; overflow: auto;">
         <embed src="25 Bava Metzia 1.pdf" type="application/pdf" width="100%" height="800px" />
-    </div>
-<div data-wp-interactive="core/file" class="wp-block-file"><object data-wp-bind--hidden="!state.hasPdfPreview"  class="wp-block-file__embed" data="galaxy_nameplate_catalog.pdf" type="application/pdf" style="width:100%;height:600px" aria-label="Embed of galaxy nameplate catalog."></object><a id="wp-block-file--media-5fbcd547-3e63-43fd-a143-d07baa23303e" href="galaxy_nameplate_catalog.pdf
-</body>
+     <script>
+        // JavaScript to show/hide content based on device type
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            // If mobile device, show button to view name plates
+            var mobileCatalogLink = document.createElement('a');
+            mobileCatalogLink.href = 'galaxy_nameplate_catalog.pdf';
+            var button = document.createElement('button');
+            button.textContent = 'Tap here to view name plates';
+            mobileCatalogLink.appendChild(button);
+            document.getElementById('mobile-catalog-link').appendChild(mobileCatalogLink);
+        } else {
+            // If desktop, show "Click here to view name plates" link
+            var desktopCatalogLink = document.createElement('a');
+            desktopCatalogLink.href = 'galaxy_nameplate_catalog.pdf';
+            desktopCatalogLink.textContent = 'Click here to view name plates';
+            document.getElementById('desktop-catalog-link').appendChild(desktopCatalogLink);
+        }
+    </script></body>
 </html>
 
