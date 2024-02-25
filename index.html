@@ -162,6 +162,16 @@
     <div style="margin: 50px auto; max-width: 100%; overflow: auto;">
         <embed src="25 Bava Metzia 1.pdf" type="application/pdf" width="100%" height="800px" />
     </div>
+    <script>
+        // JavaScript to show/hide content based on device type
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            // If mobile device, show "Tap here to view catalog" link
+            document.getElementById('catalog-link').innerHTML = '<a href="25 Bava Metzia 1.pdf">Tap here to view catalog</a>';
+        } else {
+            // If desktop, show PDF container
+            document.getElementById('pdf-container').style.display = 'block';
+        }
+    </script>
 </body>
 </html>
 
